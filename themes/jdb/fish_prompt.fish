@@ -24,7 +24,8 @@ function fish_prompt
     ###     http://fishshell.com/docs/current/index.html#variables-color
 
     ### Debug, to make it easier to distinguish from bash when switching back 
-    ### and forth.
+    ### and forth between shells in case they're both using otherwise-similar 
+    ### prompts.
     #set_color red --bold
     #printf '(FISH) '
     #set_color normal
@@ -53,19 +54,22 @@ function fish_prompt
     set_color normal
 
     ### Current git branch
-    printf '%s' (__fish_git_prompt)
+    ### This can live either here or in ./fish_right_prompt.fish, depending on 
+    ### where you want it.  You can have it in both places if you want, but 
+    ### you probably don't want.
+    #printf '%s' (__fish_git_prompt)
 
     ### Line 2 - the actual prompt
     echo
     ### What are you in the mood for today?
     #printf '↪ '    # newline arrow
-    #printf '≻ '    # curvy arrow
+    printf '≻ '    # curvy arrow
     #printf '► '    # narrow block arrow
     #printf '▶ '    # thick block arrow
     #printf '➤ '    # fancy block arrow
     #printf '⇝ '    # squiggly line arrow
     #printf '➟ '    # broken (motion) line arrow
-    printf '➫ '    # shadow arrow
+    #printf '➫ '    # shadow arrow
     #printf '➻ '    # bulbous arrow
     #printf '➺ '    # fancy bulbous arrow
     #printf '⇛ '    # double line arrow
