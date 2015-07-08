@@ -1,15 +1,15 @@
 function fish_greeting --description 'Print the shell greeting'
-    set -l c_n (set_color normal)
-    set -l c_w (set_color cyan)
+    set -l cn (set_color normal)
+    set -l cc (set_color cyan)
 
-    set -l location (printf "%sWelcome to %s%s%s" $c_n $c_w (hostname) $c_n)
-    set -l system (printf "%sRunning %s%s%s on %s%s%s" $c_n $c_w (uname -mrs) $c_n $c_w (tty | sed -e 's/.*tty\(.*\)/\1/') $c_n)
-    set -l lsb (printf "%sDist version %s%s%s, codename %s%s%s" $c_n $c_w (lsb_release -ds) $c_n $c_w (lsb_release -cs) $c_n)
-    set -l datetime (printf "%sIt is %s%s%s (%s) on %s%s%s" $c_n $c_w (date +%T) $c_n (date +%Z) $c_w (date +%F) $c_n)
+    set -l location (printf "%sWelcome to %s%s%s" $cn $cc (hostname) $cn)
+    set -l system (printf "%sRunning %s%s%s on %s%s%s" $cn $cc (uname -mrs) $cn $cc (tty | sed -e 's/.*tty\(.*\)/\1/') $cn)
+    set -l lsb (printf "%sDist version %s%s%s, codename %s%s%s" $cn $cc (lsb_release -ds) $cn $cc (lsb_release -cs) $cn)
+    set -l datetime (printf "%sIt is %s%s%s (%s) on %s%s%s" $cn $cc (date +%T) $cn (date +%Z) $cc (date +%F) $cn)
 
-    printf "%s" $c_w
-    figlet "Fish Shell"
-    printf "%s" $c_n
+    printf "%s" $cc
+    ftext
+    printf "%s" $cn
     flogo
     printf "\n %s\n %s\n %s\n %s\n\n" $location $system $lsb $datetime
 end
