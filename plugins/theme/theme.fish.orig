@@ -33,8 +33,7 @@
 # /
 
 if not set -q __fish_theme_last
-  #set -g __fish_theme_last $fish_theme
-  set -g __fish_theme_last Theme
+  set -g __fish_theme_last $fish_theme
 end
 
 function theme -d "quick theme switcher"
@@ -59,11 +58,9 @@ function theme -d "quick theme switcher"
         echo $usage
 
       case -l --list
-        #set -l regex "[[:<:]]($fish_theme)[[:>:]]"
-        set -l regex "[[:<:]](Theme)[[:>:]]"
+        set -l regex "[[:<:]]($fish_theme)[[:>:]]"
         if test (uname) != "Darwin"
-          #set regex "\b($fish_theme)\b"
-          set regex "\b(Theme)\b"
+          set regex "\b($fish_theme)\b"
         end
         set -l color green
         for theme in (theme.util.get.themes)
@@ -74,12 +71,10 @@ function theme -d "quick theme switcher"
 
       case -r --restore
         if set -q __fish_theme_last
-          #if test $__fish_theme_last != $fish_theme
-          if test $__fish_theme_last != Theme
+          if test $__fish_theme_last != $fish_theme
             theme.util.remove.current
 
-            #set fish_theme $__fish_theme_last
-            Theme $__fish_theme_last
+            set fish_theme $__fish_theme_last
             . $fish_path/oh-my-fish.fish
           end
         end
@@ -93,8 +88,7 @@ function theme -d "quick theme switcher"
 
           theme.util.remove.current
 
-          #set fish_theme $option
-          Theme $option
+          set fish_theme $option
           . $fish_path/oh-my-fish.fish
 
         else
