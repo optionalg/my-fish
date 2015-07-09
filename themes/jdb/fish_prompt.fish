@@ -63,7 +63,7 @@ function fish_prompt
     echo
 
     ### What are you in the mood for today?
-    #printf '↪ '    # newline arrow
+    printf '↪ '    # newline arrow
     #printf '≻ '    # curvy arrow
     #printf '► '    # narrow block arrow
     #printf '▶ '    # thick block arrow
@@ -78,7 +78,7 @@ function fish_prompt
     #printf '⋙  '   # 3 GTs
     #printf '✈ '    # airplane
     #printf '◈ '    # outlined diamond
-    printf '☠ '    # skull - hard to see even on the terminal, but cool anyway.
+    #printf '☠ '    # skull - hard to see even on the terminal, but cool.
     #printf '✳ '    # sunburst
     #printf '$ '    # neckbeard
 
