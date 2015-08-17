@@ -63,7 +63,7 @@ function fish_prompt
     echo
 
     ### What are you in the mood for today?
-    printf '↪ '    # newline arrow
+    printf '↪  '    # newline arrow
     #printf '≻ '    # curvy arrow
     #printf '► '    # narrow block arrow
     #printf '▶ '    # thick block arrow
