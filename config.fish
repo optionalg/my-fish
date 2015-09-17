@@ -39,6 +39,7 @@ Plugin 'mvf'
 ###############################
 ### Set up virtualenv switchers
 . ~/.config/fish/my-fish/functions/virtualenvs.fish
+
 ### And chose which one to default to
 virtmonty
 
@@ -51,19 +52,6 @@ virtmonty
 ####################
 ### PATH Changes ###
 ####################
-### Jython
-set PATH $PATH /home/jon/Applications/jython2.7.0/bin
-set JYTHON_HOME /home/jon/Applications/jython2.7.0
-
-### Lolcode (lci)
-set PATH $PATH /home/jon/opt/bin
-
-### PyCharm Python IDE
-set PATH $PATH /home/jon/Applications/pycharm-community-4.0.4/bin
-
-### Rust
-set PATH $PATH /home/jon/Applications/rust/bin
-set LD_LIBRARY_PATH $LD_LIBRARY_PATH /home/jon/Applications/rust/lib
 
 ### CLASSPATH
 set CLASSPATH .

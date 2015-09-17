@@ -1,4 +1,12 @@
 
+function virtdjango --description 'Turn on Django virtenv (python 3)'
+    source ~/work/python/virtualenvs/Django/bin/activate.fish
+    alias py=~/work/python/virtualenvs/Django/bin/python
+end
+function virtdocker --description 'Turn on Docker virtenv (python 2)'
+    source ~/work/python/virtualenvs/Docker/bin/activate.fish
+    alias py=~/work/python/virtualenvs/Docker/bin/python
+end
 function virtmonty --description 'Turn on MontyLacuna virtenv'
     source ~/work/python/virtualenvs/MontyLacuna/bin/activate.fish
     alias py=~/work/python/virtualenvs/MontyLacuna/bin/python
@@ -10,5 +18,9 @@ end
 function virtpyside --description 'Turn on Pyside virtenv'
     source ~/work/python/virtualenvs/PySide/bin/activate.fish
     alias py=~/work/python/virtualenvs/PySide/bin/python
+end
+function virttwo --description 'Turn on general-purpose Python 2 virtenv'
+    source ~/work/python/virtualenvs/GenericPython2/bin/activate.fish
+    alias py=~/work/python/virtualenvs/GenericPython2/bin/python
 end
 
