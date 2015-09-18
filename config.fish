@@ -53,6 +53,9 @@ virtmonty
 ### PATH Changes ###
 ####################
 
+### If PerlPowerTools has been installed (cpan), they should be in here.
+set PATH $PATH /home/jon/perlpowertools/bin
+
 ### CLASSPATH
 set CLASSPATH .
 set CLASSPATH $CLASSPATH ~/work/java
