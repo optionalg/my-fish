@@ -7,6 +7,10 @@ function virtdocker --description 'Turn on Docker virtenv (python 2)'
     source ~/work/python/virtualenvs/Docker/bin/activate.fish
     alias py=~/work/python/virtualenvs/Docker/bin/python
 end
+function virtheroku --description 'Turn on Heroku virtenv (python 3)'
+    source ~/work/python/virtualenvs/Heroku/bin/activate.fish
+    alias py=~/work/python/virtualenvs/Heroku/bin/python
+end
 function virtmonty --description 'Turn on MontyLacuna virtenv'
     source ~/work/python/virtualenvs/MontyLacuna/bin/activate.fish
     alias py=~/work/python/virtualenvs/MontyLacuna/bin/python
