@@ -58,6 +58,7 @@ set PATH $PATH /home/jon/perlpowertools/bin
 
 ### Rakudobrew
 set PATH $PATH /home/jon/.rakudobrew/bin
+/home/jon/.rakudobrew/bin/rakudobrew init > /dev/null 2>&1
 
 ### CLASSPATH
 set CLASSPATH .
