@@ -8,5 +8,5 @@ function gpush --description "Push master to origin"
 end
 
 function gpull --description "Pull master from origin"
-    git ll origin master
+    git pull origin master
 end
