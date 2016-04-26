@@ -61,8 +61,8 @@ set PATH $PATH /home/jon/perlpowertools/bin
 #/home/jon/.rakudobrew/bin/rakudobrew init > /dev/null 2>&1
 
 ### Regular Rakudo
-set PATH $PATH /home/jon/.rakudo/install/bin
-set PATH $PATH /home/jon/.rakudo/install/share/perl6/site/bin
+set PATH $PATH /home/jon/.rakudo/bin
+set PATH $PATH /home/jon/.rakudo/share/perl6/site/bin
 
 ### CLASSPATH
 set CLASSPATH .
