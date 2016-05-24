@@ -1,7 +1,11 @@
 
-function virtdjango --description 'Turn on Django virtenv (python 3)'
+function virtdjango --description 'Turn on Django virtenv (python 2)'
     source ~/work/python/virtualenvs/Django/bin/activate.fish
     alias py=~/work/python/virtualenvs/Django/bin/python
+end
+function virtdjango3 --description 'Turn on Django3 virtenv (python 3)'
+    source ~/work/python/virtualenvs/Django3/bin/activate.fish
+    alias py=~/work/python/virtualenvs/Django3/bin/python
 end
 function virtdocker --description 'Turn on Docker virtenv (python 2)'
     source ~/work/python/virtualenvs/Docker/bin/activate.fish
