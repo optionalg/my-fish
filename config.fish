@@ -10,7 +10,9 @@ alias rm=trash
 ### Perlbrew
 ### You need a pretty recent perlbrew for this.  0.67 of App::perlbrew wasn't 
 ### new enough, but 0.73 was.
-source ~/perl5/perlbrew/etc/perlbrew.fish
+#source ~/perl5/perlbrew/etc/perlbrew.fish
+### 'source' is the bash command.  In fish it's simply '.'
+. ~/perl5/perlbrew/etc/perlbrew.fish
 
 #############################################
 ### Oh-my-fish (plugin manager framework) ###
